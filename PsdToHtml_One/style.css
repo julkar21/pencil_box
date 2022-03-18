@@ -1,0 +1,302 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 20px 0;
+}
+.bg-1{
+	padding: 30px 20%;
+	text-align: center;
+	color: white;
+	background-color: #23232e;
+	overflow: hidden;
+}
+.bg-2{
+	padding: 20px 20%;
+	text-align: center;
+	color: #888a8b;
+	background: url("img/back.png");
+	overflow: hidden;
+}
+
+/*this is header area*/
+.header img{
+	width: 10%;
+	padding: 20px;
+}
+.header h2{
+	padding-top:40px ;
+}
+.header p{
+	font-size: 11px;
+	margin-bottom:90px ;
+}
+.header a{
+	border: 1px solid white;
+	color: white;
+	text-decoration: none;
+	padding: 8px 10px;
+	border-radius: 50%;
+}
+
+/*What i do area*/
+.what-i-do .txt{
+	font-size: 19px;
+    padding: 0 50px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: lightslategray;
+}
+.what-i-do h2{
+	color: #23232e;
+	padding: 30px 0;
+}
+.what-i-do .col{
+	width: 29.33%;
+	margin: 2%;
+	float: left;
+	text-align: justify;
+}
+.what-i-do .col h4{
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+/*this is my work area*/
+.mywork{
+	padding-bottom: 60px;
+}
+.mywork .menu{
+	margin-left: 30%;
+    padding: 50px 0;
+}
+.mywork .menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.mywork .menu ul li{
+	float: left;
+	padding: 0 20px;
+}
+.mywork .menu ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: capitalize;
+	padding-bottom: 3px;
+}
+.mywork .menu ul li a:hover,
+.mywork .menu ul li .active{
+	border-bottom: 2px solid #7b77c9;
+}
+
+.mywork .col h4{
+	margin: 10px 0;
+}
+
+.mywork .col,
+.photography .col{
+	width: 31.33%;
+	margin: 1%;
+	float: left;
+	text-align: justify;
+	text-align: center;
+	color: darkgray;
+	margin-bottom: 30px;    
+}
+
+.mywork .col img,
+.photography .col img{
+	width: 100%;
+}
+button{
+	background-color: #7b77c9;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	font-size: 13px;
+}
+
+/*this is photography area*/
+.photography p{
+	width: 40%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.photo-blog{
+	margin: 40px 0;
+}
+
+/*this is subscribe area*/
+.subscribe {
+	padding: 150px 0;
+}
+.subscribe button{
+	border-radius: 0 5px 5px 0;
+}
+.subscribe input{
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px 0 0 5px;
+	font-size: 13px;
+	margin-right: -4px;
+}
+.subscribe .icon {
+	font-size: 50px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.subscribe p{
+	width: 20%;
+    margin: auto;
+    padding: 50px 0;
+    line-height: 30px;
+}
+/*footer area*/
+.footer {
+	padding: 100px 0;
+}
+.footer .social{
+	overflow: hidden;
+}
+.footer ul{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 42.5%;
+}
+.footer ul li{
+	float: left;
+	padding: 0 20px;
+}
+.footer ul li a{
+    font-size: 30px;
+    color: #888a8b;
+}
+
+
+@media all and (max-width: 500px){
+	.header img{
+		width: 30%;
+		padding-bottom: 0;
+	}
+	.bg-1,
+	.bg-2{
+		padding: 20px 10%;
+	}
+	h2{
+		font-size: 30px;
+	}
+	.what-i-do .txt{
+		padding: 0 10px;
+	}
+	.what-i-do .col{
+		float: none;
+		width: 100%;
+	}
+	.mywork .menu {
+		margin-left: 0% !important;
+	}
+	.mywork .menu ul li {
+		padding: 15px 25px;
+	}
+	.mywork .col{
+		float: none;
+		width: 100%;
+	}
+	.mywork .col, .photography .col {
+		width: 100% !important;
+		margin: 2%;
+	}
+	.photography .col{
+		float: none;
+		width: 100%;
+	}
+	.subscribe {
+		padding-bottom: 50px !important;
+	}
+	.subscribe p {
+		width: 100%;
+	}
+	.footer ul {
+		margin-left: 14% !important;
+	}
+}
+
+@media all and (max-width: 768px){
+	.bg-2 {
+		padding: 20px 5%;
+	}
+	.what-i-do .txt {
+		padding: 0px;
+		width: 100%;
+	}
+	.mywork .menu {
+		margin-left: 0%;
+		padding: 80px 0px;
+	}
+	.mywork .menu ul li {
+		padding: 10px 20px;
+	}
+	.mywork .col, .photography .col {
+		width: 45.33%;
+		margin: 2%;
+	}
+	.photography p {
+		width: 80%;
+	}
+	.subscribe {
+		padding: 130px 0;
+	}
+	.subscribe p {
+		width: 80%;
+	}
+	.footer ul {
+		margin-left: 30%;
+	}
+}
+
+@media all and (max-width: 810px){
+	h2 {
+		margin: 40px 0;
+	}
+	.bg-2 {
+		padding: 0px 10%;
+	}
+	.what-i-do .txt {
+		width: 100%;
+	}
+	.mywork .menu {
+		margin-left: 0% !important;
+		padding: 85px 0;
+	}
+	.what-i-do .txt {
+		width: 90%;
+	}
+	.mywork .menu ul li {
+		padding: 10px 20px;
+	}
+	.photography p {
+		width: 80%;
+		line-height: 30px;
+	}
+	.subscribe p {
+		width: 80%;
+	}
+	.footer {
+		padding: 50px;
+	}
+	.footer ul {
+		margin-left: 30%;
+	}
+}
