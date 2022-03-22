@@ -1,0 +1,277 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+section{
+	padding: 80px 0;
+}
+.text-color{
+	color: rgba(255, 0, 0, 1.0);
+}
+.sec-heading{
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.hr-div{
+	position: relative;
+}
+.hr{
+	width: 100px;
+	border: 1px solid red;
+	
+}
+.hr-div::after {
+	content:"";
+	clear: both;
+	display: block;
+	position: absolute;
+
+	top: 4px;
+	left: 48px;
+	width: 10px;
+	height: 10px;
+	background-color: red;		
+	border-radius: 50%;
+}
+.button {
+	padding: 10px 15px;
+	color: white;
+	background: red;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+/* header section css */
+
+.header {
+	background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('img/head.png');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;	
+	color: white;
+}
+.nav-container{
+	background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+}
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.menu ul{
+	list-style: none;
+	display: flex;
+	gap: 10px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: wheat;
+}
+
+.head{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 70%;
+	margin: 10% auto;
+	height: 100%;
+}
+.head h1{
+	font-size: 40px;
+}
+.text-color{
+	color: rgba(255, 0, 0, 1.0);
+}
+
+
+/* about section css */
+
+.about-us {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.about-container {
+	width: 70%;
+	display: flex;
+	gap: 40px;
+	margin-top: 30px;
+}
+
+.about-profile {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.about-profile img{
+	width: 100%;
+}
+
+.img-social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	width: 100%;
+	opacity: 0.8;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	color: white;
+}
+.img-social h2 {
+	margin: 0;
+	margin-top: 20px;
+}
+.img-social ul {
+	list-style: none;
+	display: flex;
+	gap: 38px;
+	padding-left: 0;
+}
+.img-social ul li a{
+	color: white;
+}
+.about-details{
+	width: 70%;
+}
+.about-details h2{
+	margin: 0;
+}
+
+/* about us section */
+.aboutus-know{
+	background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('img/wantknow.png');
+	background-size: cover;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	color: white;
+	flex-direction: column;
+}
+.aboutus-know a{
+	color: white;
+	font-size: 30px;
+}
+
+/* service css */
+
+.service {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.service-container{
+	display: flex;
+}
+.service-container {
+	display: flex;
+	width: 70%;
+	margin-top: 40px;
+}
+.single-service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.single-service a{
+	color: red;
+	font-size: 40px;
+}
+.single-service h3{
+	text-transform: capitalize;
+	font-size: 30px;
+}
+.service-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 70%;
+	gap: 30px;
+}
+
+
+/* my skill css */
+
+.my-skill{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.skill-container{
+	display: flex;
+	width: 70%;
+	margin-top: 40px;
+	gap: 20px;
+}
+.bar-in {
+    background-color: black;
+    border-radius: 5px;
+    text-align: right;
+    color: white;
+    padding: 0px 5px;
+	position: relative;
+}
+.bar-in p{
+	/* margin: 0; */
+}
+.bar-out {
+    width: 60%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border: 6px solid red;
+    border-radius: 5px;
+}
+
+.barout-two{
+	width: 70%;
+}
+.barout-three{
+	width: 80%;
+}
+
+
+/* client section css */
+.happy-client{
+	background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('img/happy-client.png');
+	background-size: cover;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+}
+.single-client{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.single-client a{
+	color: white;
+	font-size: 30px;
+	font-weight: 300;
+}
+.single-client h4{
+	margin: 5px 0;
+	font-weight: 300;
+}
+
+/* portfolio section css */
+
+.portfolio{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
