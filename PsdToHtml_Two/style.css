@@ -481,3 +481,73 @@ section{
 .footer-menu ul li a{
 	color: white;
 }
+
+
+
+
+/* responsive css */
+
+@media all and (max-width: 500px){
+	.head{
+		margin: 0 auto;
+	}
+	.nav-bar {
+		padding: 20px;
+		flex-direction: column;
+		align-items: start;
+	}
+	.menu ul {
+		flex-direction: column !important;
+	}
+	.about-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.service-container {
+		grid-template-columns: 1fr;
+	}
+	.skill-container {
+		flex-direction: column;
+	}
+	.happy-client {
+		height: 300px;
+		flex-direction: column !important;
+		gap: 20px;
+	}
+	.portfolio-container {
+		grid-template-columns: 1fr;
+	}
+	.team-container {
+		grid-template-columns: 1fr;
+	}
+	.blog-container {
+		grid-template-columns: 1fr;
+	}
+	.footer-container {
+		flex-direction: column;
+	}
+	.footer-menu ul {
+		padding-left: 0;
+	}
+}
+
+@media all and (max-width: 810px){
+	.nav-bar {
+		width: 90%;
+	}
+	.img-social {
+		bottom: 43% !important;
+	}
+	.service-container {
+		width: 90%;
+	}
+	.skill-container {
+		width: 90%;
+	}
+	.portfolio-container {
+		width: 90%;
+	}
+	.team-container {
+		width: 90%;
+	}
+}
