@@ -57,17 +57,28 @@ a{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
+	padding: 0.5rem 1rem;
 
 }
 .menu-bar ul li a:hover {
 	color: #bea44d;
-	text-decoration: underline;
+	border-bottom: 1px solid #bda34d;
+
 }
+/* couresol css */
+
+.welcome .carousel-inner{
+	background-image: linear-gradient(rgba(189, 163, 77, 0.2), rgba(189, 163, 77, 0.5))
+	, url(img/front-1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+  }
+
 
 /*widget sec css*/
-
-.widget-sec {
-	padding: 50px;
+.widget{
+    padding: 50px 0;
 }
 .single-widget {
 	display: flex;
@@ -102,14 +113,43 @@ a{
 	align-items: center;
 	width: 60%;
 	margin: 0 auto;
+	padding: 30px 0;
 }
 .feature-head h2{
 	font-weight: bold;
 	font-size: 40px;
 }
 
-
-
+.work-cotainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+.square_border {
+    color: #bda34d !important;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 2px solid #bda34d;
+    background-color: #f9f7f3;
+    cursor: pointer;
+}
+.square_border_active {
+    color: #f9f7f3;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    /* border: 2px solid #bda34d; */
+    /* background-color: #f9f7f3; */
+    background-color: #bda34d;
+    cursor: pointer;
+}
 /*latest post section css*/
 .latest-post-sec {
 	padding-bottom: 80px;
@@ -155,14 +195,17 @@ a{
 	font-size: 40px;
 }
 .touch-in {
-	display: flex;
-	gap: 30px;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .touch-img img{
 	width: 100%;
 }
 .touch-form, .touch-img {
 	box-shadow: 0px 0px 14px rgba(0,0,0,.3);
+	padding: 20px 0px;
 }
 .touch-form{
 
@@ -210,12 +253,12 @@ a{
 }
 
 .helpful-link h3 {
-	text-align: center;
 	padding-bottom: 20px;
 }
 .link-menu {
-	display: flex;
-	justify-content: space-evenly;
+    display: flex;
+    justify-content: start;
+	gap: 40px;
 }
 .link-menu-left ul{
 	padding-left: 0;
@@ -228,6 +271,7 @@ a{
 }
 .link-menu-left ul li a, .link-menu-right ul li a{
 	color: #252323;
+	margin-left: 10px;
 }
 .link-menu-left ul li a:hover, .link-menu-right ul li a:hover{
 	text-decoration: none;
@@ -262,11 +306,11 @@ a{
 .footer{
 
 }
-.footer-sec h5,a{
+.footer-sec h5{
 	color: white;
 	text-transform: uppercase;
 }
-.footer-sec a:hover{
+.footer-sec a{
 	color: white;
 }
 .footer-social{
@@ -282,4 +326,99 @@ a{
 	justify-content: end;
 	margin-bottom: 0;
 	padding: 8px 0;
+}
+
+
+/* responsive css */
+
+@media all and (max-width: 500px){
+	.menu-bar ul {
+		padding-left: 0px;
+		padding-top: 16px;
+	}
+	.single-widget {
+		padding-bottom: 20px;
+	}
+	.feature-head {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.single-post {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 25px 50px;
+	}
+	.touch-in {
+		flex-direction: column;
+		align-items: center;
+	}
+	.touch-form, .touch-img {
+		width: 90% !important;
+	}
+	.touch-img img {
+		box-shadow: 0px 0px 14px rgba(0,0,0,.3);
+	}
+	.touch-form-in {
+		padding: 20px;
+	}
+	.touch-form .touch-form-in{
+		box-shadow: 0px 0px 14px rgba(0,0,0,.3);
+	}
+	.touch-form, .touch-img{
+		box-shadow: none;
+	}
+	.footer-copyright {
+		text-align: center;
+	}
+	.footer-social ul {
+		justify-content: center;
+	}
+}
+
+@media all and (max-width: 810px){
+	.menu-bar {
+		margin-top: -41px;
+	}
+	.menu-bar ul {
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	.menu-bar ul li a {
+		padding: 0.5rem 0rem;
+	}
+	.single-widget {
+		padding-bottom: 20px;
+	}
+	.single-post {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 25px 50px;
+	}
+	.touch-in {
+		flex-direction: column;
+	}
+	.touch-img img {
+		box-shadow: 0px 0px 14px rgba(0,0,0,.3);
+	}
+	.touch-form, .touch-img{
+		width: 100%;
+	}
+	.touch-form-in {
+		padding: 20px;
+	}
+	.touch-form .touch-form-in{
+		box-shadow: 0px 0px 14px rgba(0,0,0,.3);
+	}
+	.touch-form, .touch-img{
+		box-shadow: none;
+	}
+	.contact-us {
+		gap: 20px;
+	}
+	.footer-copyright {
+		text-align: center;
+	}
+	.footer-social ul {
+		justify-content: center;
+	}
 }
