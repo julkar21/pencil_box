@@ -1,0 +1,170 @@
+<script type="text/javascript">
+
+function grade(c){
+	if (c>=80 && c<=100) {        
+		return "A+";
+    }
+    else if(c>=70 && c<=79){
+		return "A";
+    }
+    else if(c>=60 && c<=69){
+		return "A-";
+    }
+    else if(c>=50 && c<=59){
+		return "B";
+    }
+    else if(c>=40 && c<=49){
+		return "C";
+    }
+    else if(c>=33 && c<=39){
+		return "D";
+    }
+    else if(c>=0 && c<=32){
+		return "F";
+    }
+    else{
+        alert("Wrong Input");
+    }
+}
+
+function bangla(){
+    var a = parseInt(document.getElementById('t_mark').value);
+    var b= parseInt(document.getElementById('p_mark').value);
+    var c=a+b;
+    document.getElementById('total_mark').value=c;
+   document.getElementById('gp').value=grade(c);
+    
+}
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+	<div>
+	<label>Subject Name</label>	
+    <label>Theory Mark</label>
+	<label>Practical Mark</label>	
+	<label>Total Mark</label>	
+    <label>Point</label>
+	<label>Grade</label>	
+    <label>Action</label>
+	</div>
+	
+	<div>
+		<label>Bangla 1st Paper</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="bangla()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Bangla 2nd Paper</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>English 1st Paper</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>English 2nd Paper</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Mathematics</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Physics</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Chemistry</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Biology</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Islam Sikkha</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Social Science</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+	
+	<div>
+		<label>Computer</label>	
+		 <input type="text" id="t_mark" >
+		 <input type="text" id="p_mark" >
+		 <input type="text" id="total_mark" >
+		 <input type="text" id="point" >
+		 <input type="text" id="gp" >
+		 <button onclick="abm()" >Click</button>
+	</div>
+</body>
+</html>
