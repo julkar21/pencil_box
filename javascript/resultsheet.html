@@ -27,13 +27,146 @@ function grade(c){
     }
 }
 
-function bangla(){
-    var a = parseInt(document.getElementById('t_mark').value);
-    var b= parseInt(document.getElementById('p_mark').value);
+function point(c){
+	if (c>=80 && c<=100) {        
+		return "4.00";
+    }
+    else if(c>=70 && c<=79){
+		return "3.75";
+    }
+    else if(c>=60 && c<=69){
+		return "3.7";
+    }
+    else if(c>=50 && c<=59){
+		return "3.5";
+    }
+    else if(c>=40 && c<=49){
+		return "3.00";
+    }
+    else if(c>=33 && c<=39){
+		return "2.50";
+    }
+    else if(c>=0 && c<=32){
+		return "0.0";
+    }
+    else{
+        alert("Wrong Input");
+    }
+}
+
+function bangla_1st(){
+    var a = parseInt(document.getElementById('bangla_1st_t_mark').value);
+    var b= parseInt(document.getElementById('bangla_1st_p_mark').value);
     var c=a+b;
-    document.getElementById('total_mark').value=c;
-   document.getElementById('gp').value=grade(c);
+    document.getElementById('bangla_1st_total_mark').value=c;
+    document.getElementById('bangla_1st_gp').value=grade(c);
+	document.getElementById('bangla_1st_point').value=point(c);
+		
+}
+function bangla_2nd(){
+    var a = parseInt(document.getElementById('bangla_2nd_t_mark').value);
+    var b= parseInt(document.getElementById('bangla_2nd_p_mark').value);
+    var c=a+b;
+    document.getElementById('bangla_2nd_total_mark').value=c;
+   document.getElementById('bangla_2nd_gp').value=grade(c);
+   document.getElementById('bangla_2nd_point').value=point(c);
     
+}
+function english_1st(){
+    var a = parseInt(document.getElementById('english_1st_t_mark').value);
+    var b= parseInt(document.getElementById('english_1st_p_mark').value);
+    var c=a+b;
+    document.getElementById('english_1st_total_mark').value=c;
+   document.getElementById('english_1st_gp').value=grade(c);
+   document.getElementById('english_1st_point').value=point(c);
+    
+}
+function english_2nd(){
+    var a = parseInt(document.getElementById('english_2nd_t_mark').value);
+    var b= parseInt(document.getElementById('english_2nd_p_mark').value);
+    var c=a+b;
+    document.getElementById('english_2nd_total_mark').value=c;
+   document.getElementById('english_2nd_gp').value=grade(c);
+   document.getElementById('english_2nd_point').value=point(c);
+    
+}
+function math(){
+    var a = parseInt(document.getElementById('math_t_mark').value);
+    var b= parseInt(document.getElementById('math_p_mark').value);
+    var c=a+b;
+    document.getElementById('math_total_mark').value=c;
+   document.getElementById('math_gp').value=grade(c);
+   document.getElementById('math_point').value=point(c);
+    
+}
+function physics(){
+    var a = parseInt(document.getElementById('physics_t_mark').value);
+    var b= parseInt(document.getElementById('physics_p_mark').value);
+    var c=a+b;
+    document.getElementById('physics_total_mark').value=c;
+   document.getElementById('physics_gp').value=grade(c);
+   document.getElementById('physics_point').value=point(c);
+    
+}
+function chemistry(){
+    var a = parseInt(document.getElementById('chemistry_t_mark').value);
+    var b= parseInt(document.getElementById('chemistry_p_mark').value);
+    var c=a+b;
+    document.getElementById('chemistry_total_mark').value=c;
+   document.getElementById('chemistry_gp').value=grade(c);
+   document.getElementById('chemistry_point').value=point(c);
+    
+}
+function biology(){
+    var a = parseInt(document.getElementById('biology_t_mark').value);
+    var b= parseInt(document.getElementById('biology_p_mark').value);
+    var c=a+b;
+    document.getElementById('biology_total_mark').value=c;
+   document.getElementById('biology_gp').value=grade(c);
+   document.getElementById('biology_point').value=point(c);
+    
+}
+function islam(){
+    var a = parseInt(document.getElementById('islam_t_mark').value);
+    var b= parseInt(document.getElementById('islam_p_mark').value);
+    var c=a+b;
+    document.getElementById('islam_total_mark').value=c;
+   document.getElementById('islam_gp').value=grade(c);
+   document.getElementById('islam_point').value=point(c);
+    
+}
+function social(){
+    var a = parseInt(document.getElementById('social_t_mark').value);
+    var b= parseInt(document.getElementById('social_p_mark').value);
+    var c=a+b;
+    document.getElementById('social_total_mark').value=c;
+   document.getElementById('social_gp').value=grade(c);
+   document.getElementById('social_point').value=point(c);
+    
+}
+function computer(){
+    var a = parseInt(document.getElementById('computer_t_mark').value);
+    var b= parseInt(document.getElementById('computer_p_mark').value);
+    var c=a+b;
+    document.getElementById('computer_total_mark').value=c;
+   document.getElementById('computer_gp').value=grade(c);
+   document.getElementById('computer_point').value=point(c);
+    
+}
+
+function total(){
+
+	document.getElementById('total_mark').value= parseInt(document.getElementById('computer_total_mark').value)+
+																				  parseInt(document.getElementById('social_total_mark').value)+
+																				  parseInt(document.getElementById('islam_total_mark').value)+
+																				  parseInt(document.getElementById('biology_total_mark').value)+
+																				  parseInt(document.getElementById('chemistry_total_mark').value)+
+																				  parseInt(document.getElementById('physics_total_mark').value)+
+																				  parseInt(document.getElementById('math_total_mark').value)+
+																				  parseInt(document.getElementById('english_2nd_total_mark').value)+
+																				  parseInt(document.getElementById('english_1st_total_mark').value)+
+																				  parseInt(document.getElementById('bangla_2nd_total_mark').value)+
+																				  parseInt(document.getElementById('bangla_1st_total_mark').value);
 }
 </script>
 
@@ -46,125 +179,148 @@ function bangla(){
     <title>Document</title>
 </head>
 <body>
-
-	<div>
-	<label>Subject Name</label>	
-    <label>Theory Mark</label>
-	<label>Practical Mark</label>	
-	<label>Total Mark</label>	
-    <label>Point</label>
-	<label>Grade</label>	
-    <label>Action</label>
+	<style>
+		body{
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+		}
+		.label {
+			display: flex;
+			justify-content: space-around;
+		}
+		.subject {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	</style>
+	<div class="label">
+		<label>Subject Name</label>	
+		<label>Theory Mark</label>
+		<label>Practical Mark</label>	
+		<label>Total Mark</label>	
+		<label>Point</label>
+		<label>Grade</label>	
+		<label>Action</label>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Bangla 1st Paper</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="bangla()" >Click</button>
+		 <input type="text" id="bangla_1st_t_mark" >
+		 <input type="text" id="bangla_1st_p_mark" >
+		 <input type="text" id="bangla_1st_total_mark" >
+		 <input type="text" id="bangla_1st_point" >
+		 <input type="text" id="bangla_1st_gp" >
+		 <button onclick="bangla_1st()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Bangla 2nd Paper</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="bangla_2nd_t_mark" >
+		 <input type="text" id="bangla_2nd_p_mark" >
+		 <input type="text" id="bangla_2nd_total_mark" >
+		 <input type="text" id="bangla_2nd_point" >
+		 <input type="text" id="bangla_2nd_gp" >
+		 <button onclick="bangla_2nd()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>English 1st Paper</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="english_1st_t_mark" >
+		 <input type="text" id="english_1st_p_mark" >
+		 <input type="text" id="english_1st_total_mark" >
+		 <input type="text" id="english_1st_point" >
+		 <input type="text" id="english_1st_gp" >
+		 <button onclick="english_1st()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>English 2nd Paper</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="english_2nd_t_mark" >
+		 <input type="text" id="english_2nd_p_mark" >
+		 <input type="text" id="english_2nd_total_mark" >
+		 <input type="text" id="english_2nd_point" >
+		 <input type="text" id="english_2nd_gp" >
+		 <button onclick="english_2nd()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Mathematics</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="math_t_mark" >
+		 <input type="text" id="math_p_mark" >
+		 <input type="text" id="math_total_mark" >
+		 <input type="text" id="math_point" >
+		 <input type="text" id="math_gp" >
+		 <button onclick="math()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Physics</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="physics_t_mark" >
+		 <input type="text" id="physics_p_mark" >
+		 <input type="text" id="physics_total_mark" >
+		 <input type="text" id="physics_point" >
+		 <input type="text" id="physics_gp" >
+		 <button onclick="physics()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Chemistry</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="chemistry_t_mark" >
+		 <input type="text" id="chemistry_p_mark" >
+		 <input type="text" id="chemistry_total_mark" >
+		 <input type="text" id="chemistry_point" >
+		 <input type="text" id="chemistry_gp" >
+		 <button onclick="chemistry()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Biology</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="biology_t_mark" >
+		 <input type="text" id="biology_p_mark" >
+		 <input type="text" id="biology_total_mark" >
+		 <input type="text" id="biology_point" >
+		 <input type="text" id="biology_gp" >
+		 <button onclick="biology()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Islam Sikkha</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="islam_t_mark" >
+		 <input type="text" id="islam_p_mark" >
+		 <input type="text" id="islam_total_mark" >
+		 <input type="text" id="islam_point" >
+		 <input type="text" id="islam_gp" >
+		 <button onclick="islam()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Social Science</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="social_t_mark" >
+		 <input type="text" id="social_p_mark" >
+		 <input type="text" id="social_total_mark" >
+		 <input type="text" id="social_point" >
+		 <input type="text" id="social_gp" >
+		 <button onclick="social()" >Result</button>
 	</div>
 	
-	<div>
+	<div class="subject">
 		<label>Computer</label>	
-		 <input type="text" id="t_mark" >
-		 <input type="text" id="p_mark" >
-		 <input type="text" id="total_mark" >
-		 <input type="text" id="point" >
-		 <input type="text" id="gp" >
-		 <button onclick="abm()" >Click</button>
+		 <input type="text" id="computer_t_mark" >
+		 <input type="text" id="computer_p_mark" >
+		 <input type="text" id="computer_total_mark" >
+		 <input type="text" id="computer_point" >
+		 <input type="text" id="computer_gp" >
+		 <button onclick="computer()" >Result</button>
 	</div>
+	
+	<div class="subject">
+		<label>Total Mark Calculation</label>	
+		 <input type="text" id="total_mark"  placeholder="total mark">
+		 <input type="text" id="total_point" placeholder="point">
+		 <input type="text" id="total_gp" placeholder="grade" >
+		 <button onclick="total()" >Result</button>
+	</div>
+	
 </body>
 </html>
