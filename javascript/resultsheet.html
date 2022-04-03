@@ -167,6 +167,42 @@ function total(){
 																				  parseInt(document.getElementById('english_1st_total_mark').value)+
 																				  parseInt(document.getElementById('bangla_2nd_total_mark').value)+
 																				  parseInt(document.getElementById('bangla_1st_total_mark').value);
+																				  
+		  var c = parseInt(document.getElementById('total_mark').value);
+																				  
+			if (c>=800 && c<=1000) { 
+				document.getElementById('total_point').value="4.00";
+				document.getElementById('total_gp').value="A+";
+			}
+			else if(c>=700 && c<=790){
+				document.getElementById('total_point').value="3.75";
+				document.getElementById('total_gp').value="A";
+			}
+			else if(c>=600 && c<=690){
+				document.getElementById('total_point').value="3.7";
+				document.getElementById('total_gp').value="A-";
+			}
+			else if(c>=500 && c<=590){
+				document.getElementById('total_point').value="3.5";
+				document.getElementById('total_gp').value="B";
+			}
+			else if(c>=400 && c<=490){
+				document.getElementById('total_point').value="3.00";
+				document.getElementById('total_gp').value="C";
+			}
+			else if(c>=330 && c<=390){
+				document.getElementById('total_point').value="2.50";
+				document.getElementById('total_gp').value="D";
+			}
+			else if(c>=0 && c<=320){
+				document.getElementById('total_point').value="0.0";
+				document.getElementById('total_gp').value="F";
+			}
+			else{
+				alert("Wrong Input");
+			}
+			
+			
 }
 </script>
 
