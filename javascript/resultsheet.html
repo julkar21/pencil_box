@@ -216,147 +216,152 @@ function total(){
 </head>
 <body>
 	<style>
-		body{
-			display: flex;
-			flex-direction: column;
-			gap: 22px;
-		}
-		.label {
-			display: flex;
-			justify-content: space-around;
-		}
-		.subject {
-			display: flex;
-			justify-content: space-evenly;
+		table,th,td{
+			border: 1px solid black;
 		}
 	</style>
-	<div class="label">
-		<label>Subject Name</label>	
-		<label>Theory Mark</label>
-		<label>Practical Mark</label>	
-		<label>Total Mark</label>	
-		<label>Point</label>
-		<label>Grade</label>	
-		<label>Action</label>
-	</div>
 	
-	<div class="subject">
-		<label>Bangla 1st Paper</label>	
-		 <input type="text" id="bangla_1st_t_mark" >
-		 <input type="text" id="bangla_1st_p_mark" >
-		 <input type="text" id="bangla_1st_total_mark" >
-		 <input type="text" id="bangla_1st_point" >
-		 <input type="text" id="bangla_1st_gp" >
-		 <button onclick="bangla_1st()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Bangla 2nd Paper</label>	
-		 <input type="text" id="bangla_2nd_t_mark" >
-		 <input type="text" id="bangla_2nd_p_mark" >
-		 <input type="text" id="bangla_2nd_total_mark" >
-		 <input type="text" id="bangla_2nd_point" >
-		 <input type="text" id="bangla_2nd_gp" >
-		 <button onclick="bangla_2nd()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>English 1st Paper</label>	
-		 <input type="text" id="english_1st_t_mark" >
-		 <input type="text" id="english_1st_p_mark" >
-		 <input type="text" id="english_1st_total_mark" >
-		 <input type="text" id="english_1st_point" >
-		 <input type="text" id="english_1st_gp" >
-		 <button onclick="english_1st()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>English 2nd Paper</label>	
-		 <input type="text" id="english_2nd_t_mark" >
-		 <input type="text" id="english_2nd_p_mark" >
-		 <input type="text" id="english_2nd_total_mark" >
-		 <input type="text" id="english_2nd_point" >
-		 <input type="text" id="english_2nd_gp" >
-		 <button onclick="english_2nd()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Mathematics</label>	
-		 <input type="text" id="math_t_mark" >
-		 <input type="text" id="math_p_mark" >
-		 <input type="text" id="math_total_mark" >
-		 <input type="text" id="math_point" >
-		 <input type="text" id="math_gp" >
-		 <button onclick="math()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Physics</label>	
-		 <input type="text" id="physics_t_mark" >
-		 <input type="text" id="physics_p_mark" >
-		 <input type="text" id="physics_total_mark" >
-		 <input type="text" id="physics_point" >
-		 <input type="text" id="physics_gp" >
-		 <button onclick="physics()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Chemistry</label>	
-		 <input type="text" id="chemistry_t_mark" >
-		 <input type="text" id="chemistry_p_mark" >
-		 <input type="text" id="chemistry_total_mark" >
-		 <input type="text" id="chemistry_point" >
-		 <input type="text" id="chemistry_gp" >
-		 <button onclick="chemistry()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Biology</label>	
-		 <input type="text" id="biology_t_mark" >
-		 <input type="text" id="biology_p_mark" >
-		 <input type="text" id="biology_total_mark" >
-		 <input type="text" id="biology_point" >
-		 <input type="text" id="biology_gp" >
-		 <button onclick="biology()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Islam Sikkha</label>	
-		 <input type="text" id="islam_t_mark" >
-		 <input type="text" id="islam_p_mark" >
-		 <input type="text" id="islam_total_mark" >
-		 <input type="text" id="islam_point" >
-		 <input type="text" id="islam_gp" >
-		 <button onclick="islam()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Social Science</label>	
-		 <input type="text" id="social_t_mark" >
-		 <input type="text" id="social_p_mark" >
-		 <input type="text" id="social_total_mark" >
-		 <input type="text" id="social_point" >
-		 <input type="text" id="social_gp" >
-		 <button onclick="social()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Computer</label>	
-		 <input type="text" id="computer_t_mark" >
-		 <input type="text" id="computer_p_mark" >
-		 <input type="text" id="computer_total_mark" >
-		 <input type="text" id="computer_point" >
-		 <input type="text" id="computer_gp" >
-		 <button onclick="computer()" >Result</button>
-	</div>
-	
-	<div class="subject">
-		<label>Total Mark Calculation</label>	
-		 <input type="text" id="total_mark"  placeholder="total mark">
-		 <input type="text" id="total_point" placeholder="point">
-		 <input type="text" id="total_gp" placeholder="grade" >
-		 <button onclick="total()" >Result</button>
-	</div>
+	<table>
+
+		<th>Subject Name</th>
+		<th>Theory Mark</th>
+		<th>Practical Mark</th>
+		<th>Total Mark</th>
+		<th>Point</th>
+		<th>Grade</th>
+		<th>Action</th>
+
+
+
+		<tr>
+			<td>Bangla 1st Paper</td>
+			<td><input type="text" id="bangla_1st_t_mark" ></td>
+			<td><input type="text" id="bangla_1st_p_mark" ></td>
+			<td><input type="text" id="bangla_1st_total_mark" ></td>
+			<td><input type="text" id="bangla_1st_point" ></td>
+			<td><input type="text" id="bangla_1st_gp" ></td>
+			<td><button onclick="bangla_1st()" >Result</button></td>
+		</tr>
+
+
+		<tr>
+			<td>Bangla 2nd Paper</td>	
+		 <td><input type="text" id="bangla_2nd_t_mark" ></td>
+		 <td><input type="text" id="bangla_2nd_p_mark" ></td>
+		 <td><input type="text" id="bangla_2nd_total_mark" ></td>
+		 <td><input type="text" id="bangla_2nd_point" ></td>
+		 <td><input type="text" id="bangla_2nd_gp" ></td>
+		 <td><button onclick="bangla_2nd()" >Result</button></td>
+		</tr>
+
+		<tr>
+		  <td>English 1st Paper</td>
+		 <td><input type="text" id="english_1st_t_mark" ></td>
+		 <td><input type="text" id="english_1st_p_mark" ></td>
+		 <td><input type="text" id="english_1st_total_mark" ></td>
+		 <td><input type="text" id="english_1st_point" ></td>
+		 <td><input type="text" id="english_1st_gp" ></td>
+		 <td><button onclick="english_1st()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>English 2nd Paper</td>
+		 <td><input type="text" id="english_2nd_t_mark" ></td>
+		 <td><input type="text" id="english_2nd_p_mark" ></td>
+		 <td><input type="text" id="english_2nd_total_mark" ></td>
+		 <td><input type="text" id="english_2nd_point" ></td>
+		 <td><input type="text" id="english_2nd_gp" ></td>
+		 <td><button onclick="english_2nd()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Mathematics</td>
+		 <td><input type="text" id="math_t_mark" ></td>
+		 <td><input type="text" id="math_p_mark" ></td>
+		 <td><input type="text" id="math_total_mark" ></td>
+		 <td><input type="text" id="math_point" ></td>
+		 <td><input type="text" id="math_gp" ></td>
+		 <td><button onclick="math()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Physics</td>
+		 <td><input type="text" id="physics_t_mark" ></td>
+		 <td><input type="text" id="physics_p_mark" ></td>
+		 <td><input type="text" id="physics_total_mark" ></td>
+		 <td><input type="text" id="physics_point" ></td>
+		 <td><input type="text" id="physics_gp" ></td>
+		 <td><button onclick="physics()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Physics	</td>
+		 <td><input type="text" id="physics_t_mark" ></td>
+		 <td><input type="text" id="physics_p_mark" ></td>
+		 <td><input type="text" id="physics_total_mark" ></td>
+		 <td><input type="text" id="physics_point" ></td>
+		 <td><input type="text" id="physics_gp" ></td>
+		 <td><button onclick="physics()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Chemistry	</td>
+		 <td><input type="text" id="chemistry_t_mark" ></td>
+		 <td><input type="text" id="chemistry_p_mark" ></td>
+		 <td><input type="text" id="chemistry_total_mark" ></td>
+		 <td><input type="text" id="chemistry_point" ></td>
+		 <td><input type="text" id="chemistry_gp" ></td>
+		 <td><button onclick="chemistry()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Biology	
+		 <td><input type="text" id="biology_t_mark" ></td>
+		 <td><input type="text" id="biology_p_mark" ></td>
+		 <td><input type="text" id="biology_total_mark" ></td>
+		 <td><input type="text" id="biology_point" ></td>
+		 <td><input type="text" id="biology_gp" ></td>
+		 <td><button onclick="biology()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Islam Sikkha	
+		 <td><input type="text" id="islam_t_mark" ></td>
+		 <td><input type="text" id="islam_p_mark" ></td>
+		 <td><input type="text" id="islam_total_mark" ></td>
+		 <td><input type="text" id="islam_point" ></td>
+		 <td><input type="text" id="islam_gp" ></td>
+		 <td><button onclick="islam()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Social Science	
+		 <td><input type="text" id="social_t_mark" ></td>
+		 <td><input type="text" id="social_p_mark" ></td>
+		 <td><input type="text" id="social_total_mark" ></td>
+		 <td><input type="text" id="social_point" ></td>
+		 <td><input type="text" id="social_gp" ></td>
+		 <td><button onclick="social()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td>Computer
+		 <td><input type="text" id="computer_t_mark" ></td>
+		 <td><input type="text" id="computer_p_mark" onkeyup="computer()" ></td>
+		 <td><input type="text" id="computer_total_mark" ></td>
+		 <td><input type="text" id="computer_point" ></td>
+		 <td><input type="text" id="computer_gp" ></td>
+		 <td><button onclick="computer()" >Result</button></td>
+		</tr>
+
+		<tr>
+			<td colspan="3">Total Mark Calculation	</td>
+		 <td><input type="text" id="total_mark"  placeholder="total mark"></td>
+		 <td><input type="text" id="total_point" placeholder="point"></td>
+		 <td><input type="text" id="total_gp" placeholder="grade" ></td>
+		 <td><button onclick="total()" >Result</button></td>
+		</tr>
+	</table>
 	
 </body>
 </html>
