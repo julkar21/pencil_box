@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+			<style>
+				.hide{
+					display:none;
+				}
+			</style>
+             <table>
+                <tr>
+                    <th></th>
+                    <th>Year</th>
+                    <th>Month</th>
+                    <th>Day</th>
+                </tr>
+                <tr class="hide">
+                    <th>Today</th>
+                    <th><input type="text" id="toYear"></th>
+                    <th><input type="text" id="toMonth"></th>
+                    <th><input type="text" id="toDay"></th>
+                </tr>
+                <tr>
+                    <th>Birth</th>
+                    <th><input type="text" id="birthYear"></th>
+					<td>
+						<select id="birthMonth">
+							<option value="01">Jan</option>
+							<option value="02">Feb</option>
+							<option value="03">Mar</option>
+							<option value="04">Apr</option>
+							<option value="05">May</option>
+							<option value="06">Jun</option>
+							<option value="07">Jul</option>
+							<option value="08">Aug</option>
+							<option value="09">Sep</option>
+							<option value="10">Oct</option>
+							<option value="11">Nov</option>
+							<option value="12">Dec</option>
+						</select>
+                    </td>
+                    <th><input type="text" id="birthDay"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="btn">Ok</button>
+                    </td>
+                </tr>
+            </table>
+            <script>
+			    var _date = new Date();
+                var _today = _date.getDate();
+                var _toMonth = _date.getMonth()+1;
+                var _toYear = _date.getFullYear();
+                document.getElementById("toDay").value=_today;
+                document.getElementById("toMonth").value=_toMonth;
+                document.getElementById("toYear").value=_toYear;
+               
+                var _btn=document.getElementById("btn");
+                _btn.onclick=function() {
+                    var _birthYear = document.getElementById("birthYear").value;
+                        var _birthMonth = document.getElementById("birthMonth").value;
+                        var _birthDay = document.getElementById("birthDay").value;
+
+                        if(_today < _birthDay){
+                            _today = ((_today + 30)-_birthDay);
+                            _toMonth = (_toMonth-1);
+                            console.log("Day: "+_today);
+                            if(_toMonth<_birthMonth){
+                                _toMonth=((_toMonth+12)-_birthMonth);
+                                _toYear = ((_toYear-1)-_birthYear);
+                                console.log("Month:"+_toMonth);
+                                console.log("Year:"+_toYear);
+                            }
+                            else{
+                                _toMonth=(_toMonth-_birthMonth);
+                                _toYear = (_toYear-_birthYear);
+                                console.log("Month:"+_toMonth);
+                                console.log("Year:"+_toYear);
+                            }
+                        }
+                        else if(_toMonth<_birthMonth){
+                                _today = (_today - _birthDay);
+                                console.log("Day: "+_today);
+                                _toMonth=((_toMonth+12)-_birthMonth);
+                                _toYear = ((_toYear-1)-_birthYear);
+                                console.log("Month:"+_toMonth);
+                                console.log("Year:"+_toYear);
+                            }
+                        else{
+                                _today = (_today - _birthDay);
+                                console.log("Day: "+_today);
+                                _toMonth=(_toMonth-_birthMonth);
+                                _toYear = (_toYear-_birthYear);
+                                console.log("Month:"+_toMonth);
+                                console.log("Year:"+_toYear);
+                        }
+                }
+            </script>
+</body>
+</html>
