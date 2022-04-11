@@ -1,0 +1,53 @@
+/*----------------------------------------------------------------------------------
+
+	Template Name: khana Dana Website
+	Template URL: http://www.khanadana.com
+	Description: Restaurant Website
+	Author: Group-D
+	Author URL: http://www.group-d.info
+	License: GNU General Public 
+	Version: 2022.04.09
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+	3. Getting Started
+	4. Design Area
+	5. Community Area
+	6. Subscribe Area
+	7. Download Area
+	8. Footer Area
+-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------
+font-family: 'Roboto', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Sofia', cursive;
+-----------------------------------------------------------------------------------*/
+
+
+/************** 1. Typography ************************/
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+a, 
+p,
+ul{
+	margin: 0;
+	text-decoration: none;
+}
+p{
+	color: #848789;
+	line-height: 30px;
+}
+
+body{
+	margin:0; 
+	padding: 0;
+}
