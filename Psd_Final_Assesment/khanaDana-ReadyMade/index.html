@@ -30,7 +30,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&family=Sofia&display=swap" rel="stylesheet">
-  <!-- css for bootstrap -->
+    <!-- css for bootstrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- css for Fontawesome -->
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
@@ -69,35 +69,41 @@
 
 	<section class="nav_middle_bar">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row nav_middle_bar_row">
+				<div class="col-md-3 logo_nav">
 					<img src="images/logo.png" alt="">
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3 nav_opening">
 					<div class="nav_open_icon">
-						<i class="fa-regular fa-clock"></i>
+						<div class="nav_open_icon_bgrnd">
+							<i class="fnt_icon fa-1x fa-solid fa-clock"></i>
+						</div>						
 					</div>
 					<div class="nav_open_text">
-						<h2>Opening Hour</h2>
+						<h6>Opening Hour</h6>
 						<p>From 8 am to 10 pm</p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3 border_right nav-call">
 					<div class="nav_call_icon">
-						<i class="fa-solid fa-phone"></i>
+						<div class="nav_open_icon_bgrnd">
+							<i class="fnt_icon fa-solid fa-phone"></i>
+						</div>
 					</div>
 					<div class="nav_call_text">
-						<h2>Call Us</h2>
+						<h6>Call Us</h6>
 						<p>0123-456-789</p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3 nav_cart">
 					<div class="nav_cart_icon">
-						<i class="fa-solid fa-bag-shopping"></i>
+						<div class="nav_open_icon_bgrndTwo">
+							<i class="fa-solid fnt_icon_white fa-bag-shopping"></i>
+						</div>
 					</div>
 					<div class="nav_cart_text">
-						<h2>My Cart</h2>
-						<p>@ items - $ 150.00</p>
+						<h6 class="cart_h6">My Cart</h6>
+						<p>2 items - $ 150.00</p>
 					</div>
 				</div>
 			</div>
@@ -110,16 +116,289 @@
 				<div class="col-md-12">
 					<div class="nav">
 						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">Menu</a></li>
-							<li><a href="">Pages</a></li>
-							<li><a href="">Shortcode</a></li>
-							<li><a href="">Blog</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a class="design" href="">Home</a></li>
+							<li><a class="design" href="">Menu</a></li>
+							<li><a class="design" href="">Pages</a></li>
+							<li><a class="design" href="">Shortcode</a></li>
+							<li><a class="design" href="">Blog</a></li>
+							<li><a class="design" href="">Contact</a></li>
 							<li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
 						</ul>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="all_food_item">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 all_food_item_head">
+					<h2>All Food</h2>
+					<h2 class="item_h2">Items</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row all_food_item_section">
+				<div class="col-md-2 border_right">
+					<h5>Food</h5>
+					<div class="all_food_img_menu">
+						<ul>
+							<li><img src="images/food-1.png" alt=""></li>
+							<li><img src="images/food-2.png" alt=""></li>
+							<li><img src="images/food-3.png" alt=""></li>
+							<li><img src="images/food-4.png" alt=""></li>
+							<li><img src="images/food-5.png" alt=""></li>
+						</ul>
+					</div>					
+				</div>
+				<div class="col-md-4 all_food_item_category border_right">
+					
+					<div class="all_food_category">	
+						<h5>Category</h5>					
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 all_food_item_price border_right">
+					
+
+					<div class="all_food_item_range" >
+						<h5>Price</h5>
+						<input
+							type="range"
+							min="1"                    
+							max="100"                  
+							step="1"                   
+							value="30"                 
+							data-orientation="vertical" 
+							class="range"
+							id="myRange"
+						>
+						<p><span id="RangeValue"></span></p>
+					</div>
+
+				</div>
+				<div class="col-md-2 all_food_item_sort">
+					<h5>Sort By</h5>					
+					<select class="all_food_item_sort_input" name="" id="">
+						<option value="">Latest</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h5>Food By Category</h5>
+
+					<div class="all_food_cate_menu">
+						<ul>
+							<li><i class="fa-solid fa-caret-down"></i> Food 1</li>
+							<li><i class="fa-solid fa-caret-down"></i> Food 2</li>
+							<li>Food 1</li>
+							<li>Food 2</li>
+							<li>Food 3</li>
+							<li><i class="fa-solid fa-caret-down"></i> Food 3
+								<ul>
+									<li>Category 1</li>
+									<li>Category 2</li>
+									<li>Category 3</li>
+									<li>Category 4</li>
+								</ul>
+							</li>
+							<li><i class="fa-solid fa-caret-down"></i> Food 4</li>
+							<li>Food 1</li>
+							<li><i class="fa-solid fa-caret-down"></i> Food 5</li>
+							<li><i class="fa-solid fa-caret-down"></i> Food 6</li>
+							<li>Food 1</li>
+							<li>Food 2</li>
+							<li>Food 3</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-9 all_single_food">
+
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-1.png" alt="">
+						<h6>Imported Salmon Steak</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>75</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-2.png" alt="">
+						<h6>Baked Potato Pizza</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>55</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-3.png" alt="">
+						<h6>Beyond expectations</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>75</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-4.png" alt="">
+						<h6>Egyptian food Koshary</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>85</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-5.png" alt="">
+						<h6>Salted Fried Chicken</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>60</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-6.png" alt="">
+						<h6>Salmon salad with chilli caramel</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>77</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-7.png" alt="">
+						<h6>Pineapple baked salmon</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>90</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-8.png" alt="">
+						<h6>Salmon Avocado Citrus Cevieche</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>155</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="single_food">
+						<div class="single_food_hover">
+							<button class="single_food_hover_button">View Details</button>
+						</div>
+						<img src="images/food_menu-9.png" alt="">
+						<h6>Itilian Pasta</h6>
+						<div class="single_food_price">
+							<h4><span class="dollar_color">$</span>95</h4>
+							<div class="review_star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>					
+				</div>
+
+				<button class="all_food_button">Load More</button>
 			</div>
 		</div>
 	</section>
@@ -154,10 +433,11 @@
 	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
 	<!-- js for popper -->
 	<script type="text/javascript" src="js/popper.js"></script>
-	<!-- js fo bootstrap -->
+	<!-- js for bootstrap -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- js for fontawesome -->
 	<script type="text/javascript" src="js/all.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 
 
 </body>

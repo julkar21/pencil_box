@@ -51,3 +51,338 @@ body{
 	margin:0; 
 	padding: 0;
 }
+
+.border_right{
+	border-right: 1px solid #dcdcdc;
+}
+
+
+/* Nav bar Upper part css */
+
+.nav_upper_bar{
+	background-color: #3f3f3f;
+	padding: 5px 0;
+}
+.nav_social {
+	margin-top: 4px;
+	margin-left: 20%;
+}
+.nav_social ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+    gap: 20px;
+}
+.nav_social ul li a{
+	color: #9f9f9f;
+}
+.nav_social ul li a:hover{
+	color: #c0a253;
+}
+.nav_account {
+    display: flex;
+    gap: 10px;
+	justify-content: end;
+}
+.nav_account a{
+	color: #ffffff;
+}
+.nav_account_icon {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.nav_account_icon p {
+    margin-bottom: -10px;
+    color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+/* Nav bar middle part css */
+
+.nav_middle_bar{
+	padding: 20px 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+.nav_middle_bar_row{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.nav_middle_bar h6{
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	color: #252525;
+    font-weight: 500;
+}
+.cart_h6 {
+    font-weight: normal !important;
+}
+.logo_nav img {
+    width: 240px;
+    height: 70px;
+}
+.nav_opening, .nav-call, .nav_cart {
+    display: flex;
+    gap: 12px;
+	justify-content: right;
+	align-items: center;
+}
+.nav_open_icon, .nav_call_icon, .nav_cart_icon {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #e2e2e2;
+    border-radius: 50%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_open_icon_bgrnd, .nav_open_icon_bgrndTwo{
+	width: 35px;
+    height: 35px;
+    background-color: #f1efef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_open_icon_bgrndTwo{
+	background-color: #bfa153;
+}
+.fnt_icon{
+	color: #767676;
+}
+.fnt_icon_white{
+	color: white;
+}
+
+/* Nav menu part css */
+
+.nav {
+	font-family: 'Roboto', sans-serif;
+    justify-content: end;
+	padding: 10px 0;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+.nav ul li a{
+	text-transform: uppercase;
+	color: #252525;
+}
+.nav ul li a:hover{
+	color: #c0a253;
+	transition: .4s;
+}
+.design{
+	position: relative;
+}
+.nav ul li a:hover::before {
+    content: "";
+    color: #666666;
+    font-size: 16px;
+    position: absolute;
+    right: -24px;
+    top: 8px;
+    width: 18px;
+    height: 2px;
+    background-color: #c0a253;
+	transition: .4s;
+}
+.nav ul li a:hover::after {
+    content: "";
+    color: #666666;
+    font-size: 16px;
+    position: absolute;
+    left: -24px;
+    top: 8px;
+    width: 18px;
+    height: 2px;
+    background-color: #c0a253;
+	transition: .4s;
+}
+/* All Food Item CSS */
+
+.all_food_item_section {
+    padding: 30px 0;
+}
+.all_food_item h5 , h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.all_food_item_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+.all_food_item_head h2{
+	font-family: 'Sofia', cursive;
+	font-size: 36px;
+	color: #c0a253;
+}
+.all_food_item_head .item_h2{
+	font-family: 'Playfair Display', serif;
+	color: #333333;
+}
+.all_food_img_menu ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: start;
+    gap: 6px;
+}
+.all_food_img_menu ul li img{
+	width: 35px;
+}
+.all_food_item_category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all_food_category ul {
+    display: flex;
+    list-style: none;
+    gap: 17px;
+    padding-left: 0;
+}
+.all_food_category ul li{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #9b9c9c;
+}
+.all_food_item_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.all_food_item_range {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;	
+	position: relative;
+}
+.range {
+    background: linear-gradient(90deg,rgb(214,214,214) 60%,rgb(214,214,214) 60%);
+    -webkit-appearance: none;
+    border-radius: 12px;
+    height: 6px;
+	width: 50%;
+}
+.range::after {
+    content: "100";
+    color: #666666;
+    font-size: 16px;
+    position: absolute;
+    right: 25%;
+    top: 70%;
+}
+.range::before {
+    content: "1";
+    color: #666666;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 70%;
+}
+.range::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: #c0a253;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.all_food_item_sort {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.all_food_item_sort_input {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	color: #666666;
+}
+
+.all_single_food {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    gap: 30px;
+}
+.single_food{
+	position: relative;
+}
+.single_food_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 81%;
+    background-color: #333333;
+    opacity: 0.88;    
+	display: none;
+}
+.single_food_hover_button{
+	width: 150px;
+    height: 45px;
+    border: none;
+    background: #f49d1d;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+	border-radius: 35px;
+}
+.single_food:hover .single_food_hover{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single_food_price {
+    display: flex;
+    justify-content: space-between;
+    color: #c1a353;
+}
+.dollar_color{
+	color: #c1a353;
+}
+.single_food_price h4{
+	color: #666666;
+}
+.all_food_button {
+    width: 230px;
+    height: 50px;
+    margin: 3% 57%;
+    border: none;
+    background: #c0a253;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+	border-radius: 35px;
+}
+
+.all_food_cate_menu ul{
+	list-style: none;
+}
+.all_food_cate_menu ul li {
+    padding: 5px 0;
+	color: #787878;
+	cursor: pointer;
+}
+.all_food_cate_menu ul li:hover{
+	color: #c1a353;
+}
